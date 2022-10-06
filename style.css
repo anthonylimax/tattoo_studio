@@ -75,9 +75,6 @@ header{
     gap: 200px;
     height: 100vh;
 }
-.container img{
-    width: 650px;
-}
 .my_store{
     width: 100%;
     display: flex;
@@ -86,6 +83,7 @@ header{
     flex-wrap: wrap;
 }
 .my_store img{
+    max-width: 350px;
     box-shadow: -199px -100px 0px red;   
 }
 .my_store .text-content{
@@ -126,9 +124,9 @@ header{
 }
 .ballon:hover{
     transform: scale(1.1);
-    --color-a: red;
 }
 .ballon i:hover{
+    --color-a: red;
     transform: scale(1.1);
     left: -5px;
 }
@@ -141,7 +139,12 @@ header{
     padding: 20px;
 }
 .container-grid{
-    position: static;
+    gap: 150px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .ballon h1{
     margin-top: 80px;
@@ -149,11 +152,10 @@ header{
     text-transform: uppercase;
 }
 .ballons{
-    position: relative;
-    top: -150px;
+    align-items: center;
+    gap: 10px;
     display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 250px 250px 250px 250px;
 }
 .disable, .disable div{
     display: none;
@@ -161,14 +163,10 @@ header{
 
 @media (max-width: 1100px){
     .ballons{
-    position: relative;
-    top: -150px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    }
-    .container img{
-        width: 400px;
+        align-items: center;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 250px 250px;
     }
     header{
         display: none;
@@ -199,7 +197,6 @@ header{
         color: white;
     }
     .disable{
-        position: absolute;
         left: -300px;
     }
     .list-items div, .disable div{
@@ -213,14 +210,10 @@ header{
 }
 @media (max-width: 600px){
     .ballons{
-    position: relative;
-    top: -150px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-    }
-    .container img{
-        width: 400px;
+        gap: 10px;
+        bottom: -1250px;
+        display: grid;
+        grid-template-columns: 250px;
     }
     header{
         display: none;
@@ -251,7 +244,6 @@ header{
         color: white;
     }
     .disable{
-        position: absolute;
         left: -300px;
     }
     .list-items div, .disable div{
