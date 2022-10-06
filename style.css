@@ -105,28 +105,29 @@ header{
     display: none;
 }
 .ballon{
+    
     --color-a: white;
     transition: 1s;
     position:relative;
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-color: #333333;
     height: 350px;
     border-radius: 10px;
     text-align: center;
     color: white;
-    max-width: 350px;
-    border: 1px transparent;
 }
 .ballon span{
     margin-top: 50px;
-    width: 250px;
 }
 .ballon:hover{
-    transform: scale(1.1);
+    --color-a: red;
+    color: red;
+    border: 1px solid red;
+    transform: scale(0.9);
 }
 .ballon i:hover{
-    --color-a: red;
     transform: scale(1.1);
     left: -5px;
 }
@@ -155,18 +156,21 @@ header{
     align-items: center;
     gap: 10px;
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: 300px 300px 300px 300px;
 }
 .disable, .disable div{
     display: none;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1200px){
     .ballons{
         align-items: center;
         gap: 10px;
         display: grid;
-        grid-template-columns: 250px 250px;
+        grid-template-columns: 500px 500px;
+    }
+    .ballon span{
+        width: 500px;
     }
     header{
         display: none;
@@ -185,6 +189,7 @@ header{
     }
     .list:hover{
         transform: scale(1.1);
+        color: red;
     }
     .container img{
         margin-top: 150px;
@@ -217,12 +222,20 @@ header{
         flex-direction: column;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 1030px){
     .ballons{
         gap: 10px;
         bottom: -1250px;
         display: grid;
-        grid-template-columns: 250px;
+        grid-template-columns: 1fr;
+    }
+    .ballon{
+        max-width: 500px;
+        min-width: 40%;
+    }
+    .ballon span{
+    width: 40%; 
+    min-width:200px;
     }
     header{
         display: none;
