@@ -83,6 +83,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .my_store img{
     box-shadow: -199px -100px 0px red;   
