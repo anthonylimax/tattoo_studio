@@ -28,5 +28,4 @@ function active(){
 function disable(){
     list.classList.toggle('list-items')
     list.classList.toggle('disable')
-    list.style.display = 'flex'
 }

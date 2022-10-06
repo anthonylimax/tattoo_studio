@@ -116,9 +116,6 @@ main .text-content{
     left: 0;
     padding: 20px;
 }
-.ballon i:hover{
-
-}
 
 .ballon h1{
     margin-top: 70px;
@@ -132,11 +129,18 @@ main .text-content{
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.disable{
+.disable, .disable div{
     display: none;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1100px){
+    .ballons{
+    position: relative;
+    top: -150px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    }
     .container img{
         width: 400px;
     }
@@ -172,8 +176,7 @@ main .text-content{
         position: absolute;
         left: -300px;
     }
-    .list-items div, 
-    .disable div{
+    .list-items div, .disable div{
         width: 100%;
         gap: 60px;
         display: flex;
