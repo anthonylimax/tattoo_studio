@@ -116,6 +116,7 @@ header{
     height: 350px;
     border-radius: 10px;
     text-align: center;
+    color: white;
     max-width: 350px;
     border: 1px transparent;
 }
