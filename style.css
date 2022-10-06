@@ -7,6 +7,11 @@
     text-decoration: none;
     
 }
+
+a{
+    color: white;
+    cursor: pointer;
+}
 body{
     background-color: black;
 }
@@ -26,14 +31,13 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.items .first-buttons button, .items .red-button button{
+.items .first-buttons a, .items .red-button button{
     font-size: 16px;
     padding: 15px;
     border: none;
     outline: none;
     transition: .2s;
     color: white;
-    background-color: transparent;
 }
 .items .red-button button{
     font-weight: 700;
@@ -42,14 +46,14 @@ header{
     font-weight: 500;
     background-color: red;
 }
-.items .first-buttons button:hover{
+.items .first-buttons a:hover{
     font-size: 18px;
     color: red;
     box-shadow: 0px 3px red;
 }
 .items .red-button button:hover{
     transition: 0.2s;
-    transform: scale(1.09);
+    transform: scale(1.1);
 }
 .container::after{
     display: flex;
@@ -74,15 +78,26 @@ header{
 .container img{
     width: 650px;
 }
-main{
+.my_store{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.my_store img{
+    box-shadow: -199px -100px 0px red;   
+}
+.my_store .text-content{
+    width: 500px;
     color: white;
 }
-main .text-content{
-    width: 600px;
-    text-align: center;
+.text-content *{
+    margin: 30px;
+} 
+.text-content h1{
+    text-transform: uppercase;
+    box-shadow: 0px 5px red;
+    border-radius: 3px;
 }
 .list{
     display: none;
@@ -91,16 +106,17 @@ main .text-content{
     display: none;
 }
 .ballon{
+    --color-a: white;
     transition: 0.4s;
     position:relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(8, 8, 8);
-    height: 500px;
+    background-color: #333333;
+    height: 350px;
     border-radius: 10px;
     text-align: center;
     max-width: 350px;
+    border: 1px transparent;
 }
 .ballon span{
     margin-top: 50px;
@@ -108,18 +124,26 @@ main .text-content{
 }
 .ballon:hover{
     transform: scale(1.1);
+    --color-a: red;
+}
+.ballon i:hover{
+    transform: scale(1.1);
+    left: -5px;
 }
 .ballon i{
-    
+    transition: 0.4s;
+    color: var(--color-a);
     font-size: 50px;
     position: absolute;
     left: 0;
     padding: 20px;
 }
-
+.container-grid{
+    position: static;
+}
 .ballon h1{
-    margin-top: 70px;
-    width: 200px;
+    margin-top: 80px;
+    width: 220px;
     text-transform: uppercase;
 }
 .ballons{

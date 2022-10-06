@@ -13,15 +13,15 @@
         <header>
             <div class="items">
                 <div class="first-buttons">
-                    <button>INICIO</button>
-                    <button>O ESTÚDIO</button>
-                    <button>SERVIÇOS</button>
-                    <button>GALERIA DE FOTOS</button>
-                    <button>ARTISTAS</button>
-                    <button>CONTATO</button>
+                    <a href="#">INICIO</a>
+                    <a href="#estudio">O ESTÚDIO</a>
+                    <a>SERVIÇOS</a>
+                    <a>GALERIA DE FOTOS</a>
+                    <a>ARTISTAS</a>
+                    <a>CONTATO</a>
                 </div>
                 <div class="red-button">
-                    <button>AGENDE SUA TATUAGEM</button>
+                    <button role="button">AGENDE SUA TATUAGEM</button>
                 </div>
             </div>
         </header>
@@ -32,7 +32,7 @@
                 <div>
                 <a class="fa fa-list" style="font-size:30px; cursor: pointer;" onclick="disable()"></a>
                 <a href="#">INICIO</a>
-                <a>O ESTÚDIO</a>
+                <a href="#estudio">O ESTÚDIO</a>
                 <a>SERVIÇOS</a>
                 <a>GALERIA</a>
                 <a>ARTISTAS</a>
@@ -41,30 +41,44 @@
         </div>
         <img src="./imgs/logo-tattoo.png" alt="">
     <script src="index.js"></script>
+    
+        <div class="container-grid">
+        
+            <div class="ballons">
+                <div class="ballon">
+                <i class="fa fa-heart"></i>
+                <h1>Excelência e Qualidade</h1>
+                <span>Buscamos atender as necessidades de nossos clientes, superando as expectativas por meio dos nossos serviços.</span>
+                </div>
+                <div class="ballon">
+                    <i class="fa fa-thumbs-up"></i>
+                <h1>ESTRUTURA COMPLETA</h1>
+                <span>Temos um estúdio super completo, de alta qualidade e preparado para oferecer a melhor experiência ao recebê-lo.</span>
+                </div>
+                <div class="ballon">
+                    <i class="fa fa-lock"></i>
+                    <h1>SEGURANÇA E HIGIENE</h1>
+                    <span>Segurança em todos os procedimentos, respeitando todos os padrões de biossegurança</span>
+                </div>
+                <div class="ballon">
+                    <i class="fa fa-book"></i>
+                    <h1>PROFISSIONAIS DE ALTO NÍVEL</h1>
+                    <span>Contamos com um time de tatuadores profissionais de altissimo nível prontos para lhe atender.</span>
+                </div>
+            </div>
     </div>
-    <main>
-        <div class="ballons">
-            <div class="ballon">
-            <i class="fa fa-heart"></i>
-            <h1>Excelência e Qualidade</h1>
-            <span>Buscamos atender as necessidades de nossos clientes, superando as expectativas por meio dos nossos serviços.</span>
+    <div class="my_store" id="estudio">
+        <img src="./imgs/meu_estudio.jpeg" alt="">
+        <div class="text-content">
+            <div style="display: flex;">
+                <h1>O </h1>
+                <h1 style="margin-left: -20px;">estúdio</h1>
             </div>
-            <div class="ballon">
-                <i class="fa fa-thumbs-up"></i>
-            <h1>ESTRUTURA COMPLETA</h1>
-            <span>Temos um estúdio super completo, de alta qualidade e preparado para oferecer a melhor experiência ao recebê-lo.</span>
-            </div>
-            <div class="ballon">
-                <i class="fa fa-lock"></i>
-                <h1>SEGURANÇA E HIGIENE</h1>
-                <span>Segurança em todos os procedimentos, respeitando todos os padrões de biossegurança</span>
-            </div>
-            <div class="ballon">
-                <i class="fa fa-book"></i>
-                <h1>PROFISSIONAIS DE ALTO NÍVEL</h1>
-                <span>Contamos com um time de tatuadores profissionais de altissimo nível prontos para lhe atender.</span>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid qui magni eos, vero omnis laboriosam, exercitationem consequatur neque ratione distinctio officia reiciendis aperiam aliquam, ipsa quis animi sed nobis!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas rem dolor neque nihil! Sapiente excepturi dolorem in, aliquid blanditiis consequatur nesciunt possimus harum inventore delectus eligendi dolore, libero voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, asperiores ratione culpa illum fuga sapiente quaerat, vero quibusdam ducimus voluptatem architecto sequi harum pariatur possimus voluptas dignissimos. Cumque, dolore officia.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda a est tempore veritatis eum blanditiis perspiciatis, consequatur, reiciendis possimus voluptate adipisci suscipit numquam ducimus? Praesentium illo reprehenderit suscipit eveniet obcaecati!</p>
         </div>
-    </main>
+    </div>
+</div>
 </body>
 </html>
