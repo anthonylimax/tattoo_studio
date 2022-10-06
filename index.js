@@ -1,7 +1,21 @@
+
 const container = document.getElementsByClassName('container')[0];
 const list = document.getElementsByClassName('disable')[0];
+const services = document.getElementsByClassName("photo");
+services[0].addEventListener('mouseenter', ()=>{
+    container.style.setProperty('--background-gallery', `url('./imgs/tatuagem-colorida.webp')`);
+})
+services[1].addEventListener('mouseenter', ()=>{
+    container.style.setProperty('--background-gallery', `url('./imgs/tatuagem-peb.jpg')`);
+})
+
+services[2].addEventListener('mouseenter', ()=>{
+    container.style.setProperty('--background-gallery', `url('./imgs/tatuagem-realista.jpg')`);
+})
+services[3].addEventListener('mouseenter', ()=>{
+    container.style.setProperty('--background-gallery', `url('./imgs/piercing.jpg')`);
+})
 let count = 0;
-console.log(container)
 const contarSegundos = () =>{
     obj = {
         0: () => {
