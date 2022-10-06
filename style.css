@@ -106,7 +106,7 @@ header{
 }
 .ballon{
     --color-a: white;
-    transition: 0.4s;
+    transition: 1s;
     position:relative;
     display: flex;
     flex-direction: column;
@@ -172,13 +172,22 @@ header{
         display: none;
     }
     .list{
+    transition: 1s;
+    position: fixed;
+    left: 0;
+    z-index: 1;
     cursor: pointer;
     display: flex;
     color: rgb(255, 255, 255);
     width: 100px;
     height: 100px;
-    margin-right: auto;
     padding: 60px;
+    }
+    .list:hover{
+        transform: scale(1.1);
+    }
+    .container img{
+        margin-top: 150px;
     }
     .list-items, .disable{
         transition: 1s;
