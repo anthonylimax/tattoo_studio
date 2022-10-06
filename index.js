@@ -1,5 +1,5 @@
 const container = document.getElementsByClassName('container')[0];
-const list = document.getElementsByClassName('list-items')[0];
+const list = document.getElementsByClassName('disable')[0];
 let count = 0;
 console.log(container)
 const contarSegundos = () =>{
@@ -22,8 +22,11 @@ const contarSegundos = () =>{
 setInterval(contarSegundos, 5000)
 
 function active(){
-    list.style.display = 'flex';
+    list.classList.toggle('disable')
+    list.classList.toggle('list-items')
 }
 function disable(){
-    list.style.display = 'none'
+    list.classList.toggle('list-items')
+    list.classList.toggle('disable')
+    list.style.display = 'flex'
 }
