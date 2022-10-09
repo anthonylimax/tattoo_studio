@@ -3,7 +3,7 @@ const container = document.getElementsByClassName('container')[0];
 const list = document.getElementsByClassName('disable')[0];
 const services = document.getElementsByClassName("photo");
 services[0].addEventListener('mouseenter', ()=>{
-    container.style.setProperty('--background-gallery', `url('./imgs/tatuagem-colorida.webp')`);
+    container.style.setProperty('--background-gallery', `url('./imgs/tatuagem-colorida.jpg')`);
 })
 services[1].addEventListener('mouseenter', ()=>{
     container.style.setProperty('--background-gallery', `url('./imgs/tatuagem-peb.jpg')`);

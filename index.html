@@ -17,7 +17,7 @@
                 <div class="first-buttons">
                     <a href="#">INICIO</a>
                     <a href="#estudio">O ESTÚDIO</a>
-                    <a>SERVIÇOS</a>
+                    <a href="#service">SERVIÇOS</a>
                     <a>GALERIA DE FOTOS</a>
                     <a>ARTISTAS</a>
                     <a>CONTATO</a>
@@ -35,17 +35,17 @@
                 <a class="fa fa-list" style="font-size:30px; cursor: pointer;" onclick="disable()"></a>
                 <a href="#">INICIO</a>
                 <a href="#estudio">O ESTÚDIO</a>
-                <a>SERVIÇOS</a>
+                <a href="#service">SERVIÇOS</a>
                 <a>GALERIA</a>
                 <a>ARTISTAS</a>
                 <a>CONTATO</a>
             </div>
         </div>
-        <img src="./imgs/logo-tattoo.png" style="width: 40%; min-width: 350px;" alt="">
+        <img src="./imgs/logo-tattoo.png" style="width: 40%; min-width: none;" alt="">
 
         <div class="container-grid">
 
-            <div class="ballons">
+            <section class="ballons">
                 <div class="ballon">
                     <i class="fa fa-heart"></i>
                     <h1>Excelência e Qualidade</h1>
@@ -69,10 +69,9 @@
                     <span>Contamos com um time de tatuadores profissionais de altissimo nível prontos para lhe
                         atender.</span>
                 </div>
-            </div>
-            <div class="my_store" id="estudio">
-                <img src="./imgs/meu_estudio.jpeg" 
-                style="width: 100%; min-width:200px;">
+            </section>
+            <section class="my_store" id="estudio">
+                <img src="./imgs/meu_estudio.jpeg" style="width: 100%; min-width:200px;">
                 <div class="text-content">
                     <div style="display: flex;">
                         <h1>O </h1>
@@ -91,25 +90,57 @@
                         blanditiis perspiciatis, consequatur, reiciendis possimus voluptate adipisci suscipit numquam
                         ducimus? Praesentium illo reprehenderit suscipit eveniet obcaecati!</p>
                 </div>
-            </div>
-            <div class="container-our-services">
+            </section>
+            <section class="container-our-services" id="service">
                 <div style="display: flex;">
                     <h1>Nossos</h1>
                     <h1 style="margin-left: 10px;">serviços</h1>
                 </div>
                 <div class="services">
-                    <div class="photo"><h2>TATTOS COLORIDAS</h2></div>
-                    <div class="photo"><h2>TATTOOS PRETO E BRANCO</h2></div>
-                    <div class="photo"><h2>TATTOOS REALISTAS</h2></div>
-                    <div class="photo"><h2>PIERCINGS E BRINCOS</h2></div>
+                    <div class="photo">
+                        <h2>TATTOS COLORIDAS</h2>
+                    </div>
+                    <div class="photo">
+                        <h2>TATTOOS PRETO E BRANCO</h2>
+                    </div>
+                    <div class="photo">
+                        <h2>TATTOOS REALISTAS</h2>
+                    </div>
+                    <div class="photo">
+                        <h2>PIERCINGS E BRINCOS</h2>
+                    </div>
                 </div>
-                
+
                 <div class="red-button">
-                    <button role="button">AGENDE SUA TATUAGEM</button>
+                    <button role="button">FAÇA SEU ORÇAMENTO</button>
                 </div>
-            </div>
+            </section>
         </div>
+        <section class="galeria-de-fotos">
+            <h1>GALERIA DE FOTOS</h1>
+            <div class="grid-images">
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-2.jpg')" alt=""></div>
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-3.jpg')" alt=""></div>
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-4.jpg')" alt=""></div>
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-5.jpg')" alt=""></div>
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-6.jpg')" alt=""></div>
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-7.jpg')" alt=""></div>
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-8.jpg')" alt=""></div>
+                    <div class="img--albun" style="background-image: url('./imgs/tattoo/img-1.jpg')" alt=""></div>
+                    
+            </div>
+        </section>
+        
+        <footer>
+            <h1>Landing Page, puramente ilustrativa com o intuito de ilustrar meus conhecimentos sobre web developingment. Sem nenhuma intenção de obter lucros com
+                as imagens contidas nessa página web.
+            </h1><h1>feito por Anthony Lima</h1> 
+            <div style="display: flex;">
+                <h1>@anthonylimax</h1>
+            </div>
+        </footer>
     </div>
+
     <script src="index.js"></script>
 </body>
 
