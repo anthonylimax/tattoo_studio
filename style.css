@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;800;900&display=swap');
 
 * {
+    scroll-behavior: smooth;
     letter-spacing: 1px;
     font-family: 'Exo', serif;
     margin: 0;
@@ -14,7 +15,6 @@ a {
 }
 
 body {
-    overflow-x: hidden;
     background-color: #000;
 }
 
@@ -37,6 +37,7 @@ header {
 }
 
 .items .first-buttons a, .red-button button {
+    cursor: pointer;
     font-size: 16px;
     padding: 15px;
     border: none;
@@ -281,16 +282,14 @@ footer h1{
 .grid-images{
     display: grid;
     gap: 5px;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: 400px 400px;
 }
 .grid-images .img--albun{
-    background-repeat:no-repeat;
     width: 100%;
-    min-width: 250px;
+    height: 100%;
     border-radius: 5px;
-    background-position-x: center;
-    background-size:165%;
+    background-size: 100%;
     filter: opacity(0.90);
     transition: 0.8s;
 }
@@ -303,13 +302,14 @@ footer h1{
         flex-direction: column;
         align-items: center;
     }
-    .grid-images{
-    height: 1600px;
+    .grid-images{   
     display: grid;
     grid-template-columns: 1fr 1fr;
     }
     .grid-images .img--albun{
-    min-width: none;
+        
+        max-width: 300px;
+        width: 100%;
     }
     .ballons {
         align-items: center;
@@ -456,4 +456,11 @@ footer h1{
         align-items: center;
         flex-direction: column;
     }
+}
+@media (max-width: 600px){
+    
+    .grid-images{   
+        display: grid;
+        grid-template-columns: 1fr;
+        }
 }
